@@ -1,0 +1,215 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-container1 {
+  border: 5px solid red;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  height: 100vh;
+  width: 32vw;
+  /* background-color: aqua; */
+}
+
+.flex-container1-items:nth-child(1) {
+  border: 5px solid tomato;
+
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-container1-items:nth-child(2) {
+  border: 5px solid tomato;
+
+  display: block;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+/* ---------------------------------------container2----------------------------------------- */
+
+.flex-container {
+  /* background-color: #000; */
+  border: 5px solid blue;
+  flex-grow: 2;
+  flex-shrink: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  height: 100vh;
+  width: 64vw;
+}
+
+.flex-items:nth-child(1) {
+  border: 5px solid red;
+  width: 64vw;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  border: 5px solid red;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  border: 5px solid red;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  border: 5px solid red;
+  display: block;
+  width: 64vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+/* ---------------------------------------Media Container1----------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    border: 5px solid purple;
+
+    display: flex;
+    flex-flow: column nowrap;
+    height:calc(100vh -2%) !important;
+        /* width: calc(100vw -2%); */
+    /* height: calc(98vh); */
+    width: calc(98vw);
+  }
+  .flex-container1 {
+    border: 5px solid blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    height: auto !important;
+    width: calc(98vw);
+    background-color: aqua;
+  }
+  .flex-container1-items:nth-child(1) {
+    border: 5px solid tomato;
+    flex-basis: auto;
+    align-self: auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    order: 0;
+    width: calc(98vw);
+    height: calc(98vh);
+    
+  }
+
+  .flex-container1-items:nth-child(2) {
+    border: 5px solid tomato;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: calc(98vw);
+    height: calc(98vh);
+  }
+  /* ---------------------------------------Media Container2----------------------------------------- */
+
+  .flex-container {
+    /* background-color: #000; */
+    border: 5px solid red;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    height: calc(98vh);
+    width: calc(98vw);
+  }
+
+  .flex-items:nth-child(1) {
+    border: 5px solid red;
+    width: calc(98vw);
+    height: calc(98vh);
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  .flex-items:nth-child(2) {
+    width: calc(98vw);
+    height: calc(98vh);
+
+    border: 5px solid red;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  .flex-items:nth-child(3) {
+    width: calc(98vw);
+    height: calc(98vh);
+
+    border: 5px solid red;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  .flex-items:nth-child(4) {
+    border: 5px solid red;
+    display: block;
+    width: calc(98vw);
+    height: calc(98vh);
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+}
