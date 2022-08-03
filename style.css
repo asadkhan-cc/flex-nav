@@ -1,4 +1,4 @@
-body {
+.grad {
   background-image: linear-gradient(to right, purple, blue);
 }
 ul {
@@ -7,7 +7,7 @@ ul {
 a:active,
 a:link,
 a:visited {
-  color: bisque;
+  color: chartreuse;
   text-decoration: none;
 }
 
@@ -19,7 +19,8 @@ ul {
   /* flex-flow: column-reverse wrap; */
 }
 li {
-  flex-grow: 1;
+  
+  flex-grow: 5;
 }
 .div {
   width: 100px;
